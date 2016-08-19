@@ -6,7 +6,7 @@ class LetrasCom:
 
   @classmethod
   def get_words(cls):
-    words = [cls.get_lyric_words(path) for path in cls.get_index()]
+    words = [cls.get_lyric(path) for path in cls.get_index()]
     return sum(words, []) # hacky
 
   @classmethod
